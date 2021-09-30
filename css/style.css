@@ -2,6 +2,7 @@
   --blue: #2196f3;
   --grey: #757575;
   --white: #ffffff;
+  --light-grey: #f5f4fa;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -11,9 +12,14 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+li {
   margin-top: 0;
   margin-bottom: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }
 .logo {
   color: var(--blue);
@@ -25,18 +31,32 @@ p {
   line-height: 1.19em;
   color: #212121;
   text-decoration: none;
+  margin-right: 93px;
 }
+
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  background-color: aqua;
 }
-.heder {
-  background-color: blueviolet;
+.row {
+  display: flex;
+  margin: 0 -15px;
 }
-.nav-container {
+.col-4 {
+  padding: 0 15px;
+  width: 33.33%;
+}
+.col-3 {
+  padding: 0 15px;
+  width: 25%;
+}
+.header {
+  padding: 24px 0;
+}
+.line {
+  border: 1px solid #ececec;
 }
 .studio {
   color: var(--white);
@@ -59,6 +79,7 @@ p {
 .container-hero {
   text-align: center;
   background-color: #2f303a;
+  min-height: 600px;
 }
 .button {
   font-family: inherit;
@@ -120,19 +141,16 @@ p {
   line-height: 1.71em;
   text-decoration: none;
 }
-.foter {
-  width: 1200px;
+.footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 .nave {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
 }
-.ash {
-}
 .ash-post {
-  margin-top: 94px;
   margin-bottom: 0;
   font-weight: bold;
   font-size: 14px;
@@ -159,9 +177,9 @@ p {
   letter-spacing: 0.03em;
 }
 .section-name {
-  margin-top: 0;
-  margin-bottom: 0px;
+  padding: 94px 0;
 }
+
 .name-spesh {
   font-weight: 500;
   font-size: 16px;
@@ -173,4 +191,57 @@ p {
   line-height: 1.18em;
   color: var(--grey);
   letter-spacing: 0.03em;
+}
+.d-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.ml-50 {
+  margin-left: 50px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mb-94 {
+  margin-bottom: 94px;
+}
+.bg-light-grey {
+  background-color: var(--light-grey);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.text-center {
+  text-align: center;
+}
+.shadow {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.team-member {
+  padding: 20px 0;
+}
+.team-br {
+  border-radius: 0px 0px 4px 4px;
 }
