@@ -160,7 +160,24 @@ a {
   min-width: 136px;
   text-align: center;
 }
-/*----------SECTION-TITLE--------------*/
+.link {
+  color: #212121;
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--blue);
+}
+.grey {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 1.71em;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 .section-title {
   font-weight: 700;
   font-size: 18px;
